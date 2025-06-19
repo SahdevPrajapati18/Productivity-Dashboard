@@ -220,12 +220,8 @@ pomodoroTimer()
 function weatherFunctionality() {
 
 
-    
-    var apiKey = '627e6a81c9914a6cba4175953241105'
+    var apiKey = 'fbff34d8e3d6ab3415fbdb9d710aa23b'
     var city = 'Panipat'
-    
-
-
     
     var header1Time = document.querySelector('.header1 h1')
     var header1Date = document.querySelector('.header1 h2')
@@ -234,21 +230,29 @@ function weatherFunctionality() {
     var precipitation = document.querySelector('.header2 .precipitation')
     var humidity = document.querySelector('.header2 .humidity')
     var wind = document.querySelector('.header2 .wind')
-
+    
     var data = null
-
+    
     async function weatherAPICall() {
-        var response = await fetch(`http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}`)
-        data = await response.json()
-
-
-        header2Temp.innerHTML = `${data.current.temp_c}°C`
-        header2Condition.innerHTML = `${data.current.condition.text}`
-        wind.innerHTML = `Wind: ${data.current.wind_kph} km/h`
-        humidity.innerHTML = `Humidity: ${data.current.humidity}%`
-        precipitation.innerHTML = `Heat Index : ${data.current.heatindex_c}%`
+        try {
+            var response = await fetch(`https://api.weatherstack.com/current?access_key=${apiKey}&query=${city}`)
+            data = await response.json()
+            if (data.error) {
+                console.error('API Error:', data.error)
+                return
+            }
+    
+            header2Temp.innerHTML = `${data.current.temperature}°C`
+            header2Condition.innerHTML = data.current.weather_descriptions[0]
+            wind.innerHTML = `Wind: ${data.current.wind_speed} km/h`
+            humidity.innerHTML = `Humidity: ${data.current.humidity}%`
+            precipitation.innerHTML = `Precipitation: ${data.current.precip} mm`
+    
+        } catch (error) {
+            console.error('Error fetching weather:', error)
+        }
     }
-
+    
     weatherAPICall()
 
 
