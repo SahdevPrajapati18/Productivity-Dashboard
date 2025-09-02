@@ -763,7 +763,7 @@ nav{
     }
 
     header .header1 h1 {
-        font-size: 32px;
+        font-size: 2rem;
     }
 
 
@@ -771,24 +771,21 @@ nav{
     header .header1 h4,
     header .header2 h2,
     header .header2 h4 {
-        font-size: 18px;
+        font-size: 1.1rem;
     }
 
     .elem {
-        height: 250px;
-    }
-    .fullElem{
-        height: 20vh;
-        width: 30vw;
+        height: 35vh;
     }
 
+
     .todo-list-fullpage h2 {
-        font-size: 32px;
+        font-size: 2rem;
     }
 
     .daily-planner-fullpage h2,
     .pomodoro-fullpage h2 {
-        font-size: 28px;
+        font-size: 1.6rem;
     }
 
     .pomo-timer h1 {
