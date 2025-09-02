@@ -1,6 +1,6 @@
 :root{
     --pri:#004225;
-    --sec:#FFB000;
+    --sec:#7c79a7;
     --tri1:#F5F5DC;
     --tri2:#97836d;
     --red:red;
@@ -521,7 +521,7 @@ nav{
 }
 
 .theme h4{
-    color: var(--sec);
+    color: var(--tri1);
     font-weight: 700;
     font-size: 20px;
     pointer-events: none;
@@ -776,6 +776,10 @@ nav{
 
     .elem {
         height: 250px;
+    }
+    .fullElem{
+        height: 20vh;
+        width: 30vw;
     }
 
     .todo-list-fullpage h2 {
