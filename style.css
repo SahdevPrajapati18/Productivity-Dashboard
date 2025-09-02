@@ -37,65 +37,70 @@
 html,body{
     height:100%;
     width:100%;
+    background-color: var(--sec);
 }
 
 #main{
-    height: 120%;
+    height: 100%;
     width: 100%;
-    background-color: var(--sec);
-    padding-top: 100px;
+    padding-top: 10vh;
+    margin-bottom: 0;
 }
 
 section.allElems{
     height: 100%;
     width: 100%;
-    padding: 40px;
+    padding: 2.5rem;
     position: absolute;
+}
+nav{
+    position: sticky;
+    top:0;
 }
 
 .allElems header{
-    background-image: url(https://images.unsplash.com/photo-1469050624972-f03b8678e363?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-image: url(https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     background-size:cover;
     background-position: center;
     width: 100%;
-    margin-bottom:20px;
-    border-radius: 20px;
+    margin-bottom:1.2rem;
+    border-radius: 1.2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 25px 35px;
+    padding: 1.5rem 2rem;
 }
 
 header .header1 h1{
-    font-size: 60px;
+    font-size: 3.5rem;
     font-weight: 700;
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
 }
 
 header .header1 h2{
-    font-size: 30px;
+    font-size: 2rem;
     font-weight: 500;
 }
 
 header .header1 h4{
-    font-size: 30px;
+    font-size: 2rem;
     font-weight: 500;
 }
 
 header .header2 h2{
-    font-size: 60px;
+    font-size: 3.5rem;
     font-weight: 700;
 }
 
 header .header2 h4{
-    font-size: 30px;
+    font-size: 2rem;
     font-weight: 500;
-    margin-top: -10px;
-    margin-bottom: 35px;
+    margin-top: -0.6rem;
+    margin-bottom: 2rem;
 }
 
 header .header2 h3{
-    font-size: 20px;
+    font-size: 1.2rem;
     opacity: 0.8;
     font-weight: 500;
 }
@@ -104,16 +109,16 @@ header .header2 h3{
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    gap: 45px;
+    gap: 5vh;
     justify-content: center;
 }
 
 .elem{
     background-color: var(--sec);
-    height: 400px;
-    width: 325px;
-    font-size:25px;
-    border-radius: 10px;
+    height: 45vh;
+    width: 21.5vw;
+    font-size:1.5rem;
+    border-radius: 0.6rem;
     overflow: hidden;
     position: relative;
     transition: all ease 0.5s;
@@ -132,7 +137,7 @@ header .header2 h3{
     bottom: 4%;
     right: 5%;
     font-weight: 500;
-    font-size: 25px;
+    font-size: 1.5rem;
 }
 
 .elem:active{
@@ -143,7 +148,7 @@ header .header2 h3{
     height: 100%;
     width:100%;
     background-color: var(--sec);
-    padding: 30px;
+    padding: 2rem;
     display: none;
     position: absolute;
 }
@@ -153,9 +158,9 @@ header .header2 h3{
     right: 5%;
     background-color: var(--black);
     border-radius: 50%;
-    padding: 12px;
+    padding: 0.8rem;
     border:none;
-    font-size: 25px;
+    font-size: 1.5rem;
     font-weight: 700;
     cursor: pointer;
     
@@ -166,11 +171,11 @@ header .header2 h3{
 }
 
 .todo-list-fullpage h2{
-    font-size: 65px;
+    font-size: 4rem;
 }
 
 .todo-list-fullpage .todo-container{
-    height: 80%;
+    height: 60%;
     width:100%;
     margin-top: 30px;
     display: flex;
@@ -221,7 +226,7 @@ header .header2 h3{
     padding: 10px 20px;
     width: 100%;
     font-size: 24px;
-    background-color: var(--sec);
+    background-color: var(--tri2);
     color: var(--pri);
     border-radius: 5px;
     font-weight: 700;
@@ -526,204 +531,197 @@ nav{
 .theme:active{
     scale: 0.96;
 }
+footer{
+    text-align: center;
+    padding-top: 5vh;
+}
 
 /* Mobile Responsive Design */
 @media screen and (max-width: 768px) {
     section.allElems {
-        padding: 20px;
+        padding: 1.2rem;
     }
    
 
     #main {
-        padding-top: 80px;
-        height: 170%;
+        padding-top: 5rem;
         overflow: hidden;
     }
 
     /* Navigation */
     .nav-in {
-        padding: 15px 20px;
+        padding: 1rem 1.2rem;
         border-radius: 0;
     }
 
     .nav-in h2 {
-        font-size: 24px;
+        font-size: 1.5rem;
     }
 
     .theme h4 {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .theme {
-        padding: 8px 15px;
+        padding: 0.5rem 1rem;
     }
 
     /* Header */
     .allElems header {
-        flex-direction: column;
-        text-align: center;
-        padding: 20px;
-        gap: 20px;
+        /* flex-direction: column; */
+        /* text-align: center; */
+        padding: 1rem;
+        gap: 1rem;
     }
 
     header .header1 h1 {
-        font-size: 40px;
-        margin-bottom: 20px;
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
     }
 
     header .header1 h2,
     header .header1 h4 {
-        font-size: 22px;
+        font-size: 1rem;
+        
     }
 
     header .header2 h2 {
-        font-size: 40px;
-        margin-bottom: 10px;
+        font-size: 2rem;
+        margin-bottom: 0.6rem;
     }
 
     header .header2 h4 {
-        font-size: 22px;
-        margin-bottom: 20px;
+        font-size: 1.4rem;
+        margin-bottom: 1.2rem;
     }
 
     header .header2 h3 {
-        font-size: 16px;
+        font-size: 1.2rem;
     }
 
     /* Feature Cards */
     .allElems .allFeatures {
-        gap: 20px;
+        gap: 1.2rem;
         justify-content: center;
     }
 
     .elem {
         width: 100%;
-        max-width: 350px;
-        height: 300px;
+        max-width: 45vw;
+        height: 25vh;
     }
 
     .elem h2 {
-        font-size: 20px;
+        font-size: 1.2rem;
     }
 
     /* Full Page Elements */
     .fullElem {
-        padding: 20px;
+        padding: 1.2rem;
     }
 
     .back {
-        right: 3%;
-        top: 3%;
-        padding: 10px;
-        font-size: 20px;
+        top:0;
+        padding: 1.5rem;
+        font-size: 1.2rem;
+    
     }
 
-    /* Todo List */
-    .todo-list-fullpage{
-        height: 160%;
-    }
     .todo-list-fullpage h2 {
-        font-size: 40px;
-        margin-bottom: 20px;
+        font-size: 2.5rem;
+        margin-bottom: 1.2rem;
         text-align: center;
-        margin-right:30px;
+        margin-right:1.9rem;
     }
 
     .todo-list-fullpage .todo-container {
         flex-direction: column;
         height: auto;
-        gap: 20px;
+        gap: 1.2rem;
     }
 
     .todo-list-fullpage .todo-container .addTask,
     .todo-list-fullpage .todo-container .allTask {
         width: 100%;
-        min-height: 300px;
+        min-height: 40vh;
     }
 
     .todo-container .addTask form input#task-input,
     .todo-container .addTask form textarea,
     .todo-container .addTask form button {
-        font-size: 18px;
+        font-size: 1.1rem;
     }
 
     .task {
         flex-direction: column;
         align-items: flex-start;
-        gap: 10px;
-        padding: 15px;
+        gap: 0.6rem;
+        padding: 1rem;
     }
 
     .task h5 {
-        font-size: 20px;
+        font-size: 1.2rem;
     }
 
     .task button {
         align-self: flex-end;
-        font-size: 16px;
-        padding: 8px 15px;
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
     }
 
     /* Daily Planner */
     .daily-planner-fullpage h2 {
-        font-size: 35px;
+        font-size: 2.1rem;
         text-align: center;
-        margin-right: 35px;
+        margin-right: 2.1rem;
     }
 
     .daily-planner-fullpage .day-planner {
-        padding: 15px;
-        margin-top: 20px;
+        padding: 1rem;
+        margin-top: 1.2rem;
     }
 
     .daily-planner-fullpage .day-planner .day-planner-time {
         width: 100%;
-        margin-bottom: 10px;
+        margin-bottom: 0.6rem;
     }
 
     .day-planner .day-planner-time input {
-        font-size: 24px;
-        padding: 15px 25px;
-        padding-top: 25px;
+        font-size: 1.5rem;
+        padding: 1rem 1.6rem;
+        padding-top: 1.6rem;
     }
 
     .day-planner .day-planner-time p {
-        font-size: 14px;
+        font-size: 1rem;
     }
 
     /* Motivation */
-   
-    .motivational-fullpage .motivation-container {
-        width: 95%;
-        height: auto;
-        height: 600px;
-        
-    }
 
     .motivation-1 h2 {
-        font-size: 28px;
-        padding: 20px;
+        font-size: 1.8rem;
+        padding: 1.2rem;
         text-align: center;
     }
 
     .motivation-2 {
-        padding: 20px;
-        margin: 20px 0;
+        padding: 1.2rem;
+        margin: 1.2rem 0;
     }
 
     .motivation-2 h2 {
-        font-size: 22px;
+        font-size: 1.3rem;
         text-align: center;
     }
 
     .motivation-3 h3 {
-        font-size: 20px;
-        padding: 20px;
+        font-size: 1.2rem;
+        padding: 1.2rem;
         text-align: center;
     }
 
     .motivational-fullpage .motivation-container .motivation-wrapper img {
-        height: 80px;
+        height: 8vh;
         right: 2%;
         top: 2%;
     }
@@ -731,25 +729,25 @@ nav{
     /* Pomodoro Timer */
     
     .pomodoro-fullpage h2 {
-        font-size: 35px;
+        font-size: 2.1rem;
         text-align: center;
     }
 
     .pomodoro-fullpage .session {
-        font-size: 20px;
-        padding: 10px 20px;
+        font-size: 1.2rem;
+        padding: 0.6rem 1.2rem;
         top: 15%;
 
     }
 
     .pomo-timer h1 {
-        font-size: 100px;
+        font-size: 6.2rem;
     }
 
     .pomo-timer button {
-        font-size: 20px;
-        padding: 8px 15px;
-        margin: 5px;
+        font-size: 1.2rem;
+        padding: 0.5rem 1rem;
+        margin: 0.4rem;
     }
 }
 
@@ -762,10 +760,17 @@ nav{
     .theme h4 {
         font-size: 14px;
     }
+    .allElems header {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+        gap: 1rem;
+    }
 
     header .header1 h1 {
         font-size: 32px;
     }
+
 
     header .header1 h2,
     header .header1 h4,

@@ -254,7 +254,7 @@ function weatherFunctionality() {
     }
     
     weatherAPICall()
-
+    
 
     function timeDate() {
         const totalDaysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
