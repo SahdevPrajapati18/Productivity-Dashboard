@@ -44,7 +44,6 @@ html,body{
     height: 100%;
     width: 100%;
     padding-top: 10vh;
-    margin-bottom: 0;
 }
 
 section.allElems{
@@ -530,10 +529,6 @@ nav{
 
 .theme:active{
     scale: 0.96;
-}
-footer{
-    text-align: center;
-    padding-top: 5vh;
 }
 
 /* Mobile Responsive Design */
